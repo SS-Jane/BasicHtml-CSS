@@ -1,0 +1,65 @@
+body{
+    background-color: #333;
+}
+.box-1{
+    background-color: aliceblue;
+    width: 100px;
+    height: 100px;
+    /*
+    animation-name: animate-1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite; /*Play count
+    animation-direction: alternate; /*Direction
+    animation-timing-function: ease-in-out 
+    */
+
+    position: relative;
+    /* animation-name: animate-2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite; */
+
+    animation: animate-2 5s infinite;
+}
+
+/* @keyframes animate-1{
+    from{
+        width: 100px;
+    }
+    to{
+        width: 400px;
+    }
+} */
+
+    @keyframes animate-2 {
+        0%{
+            top: 0;
+            left: 0;
+            transform: rotate(0deg);
+            background-color: saddlebrown;
+        }
+        25%{
+            top: 0;
+            left: 200px;
+            transform: rotate(90deg);
+            background-color: salmon;
+        }
+        50%{
+            left: 200px;
+            top: 200px;
+            transform: rotate(180deg);
+            background-color: sandybrown;
+        }
+        75%{
+            left: 0;
+            top: 200px;
+            transform: rotate(270deg);
+            background-color: seagreen;
+        }
+        100%{
+            top: 0;
+            left: 0;
+            transform: rotate(360deg);
+            background-color: seashell;
+        }
+        
+    }

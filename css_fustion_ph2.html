@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            font-family : "lucida handwriting" , "Itim" , cursive ;
+            box-sizing: border-box;
+            font-size: 1rem;
+        }
+        #header{
+            margin: 5px 15px 15px 15px;
+            background: #333;
+            padding: 5px 5px 5px 5px;
+            text-align: center;
+            color: aquamarine;
+            font-size: 5rem;
+            font-style: oblique;
+            font-size: larger;
+        }
+        article{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-items: center;
+            /* align-items: center; */
+        }
+        #picture{
+            width: 50%;
+            border-radius: 10% 1% 10% 1%;
+        }
+        h2{
+            font-size: 1.5rem;
+            color: rgb(255, 140, 0);
+        }
+        .article{
+            margin: 0.5vw;
+            padding: 0.5vw;
+            border: 0.1vw solid cadetblue;
+            border-radius: 0.5vw;
+            background-color: aqua;
+            width: 45%;
+        }
+        .container-2{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .box-demo-1{
+            background-color: black;
+            width: 100px;
+            height: 100px;
+            /* transform: translate(200px); */
+            /* transition-property: background-color;
+            transition-duration: 5s;
+            transition-timing-function: ease-in-out; */
+            /* transition: background-color 2s, width 3s ease-in 0.5s; */
+            transition: all 3s ease-in 0.5s;
+        }
+        .box-demo-1:hover{
+            background-color: rgb(255, 0, 0);
+            width: 300px;
+            border-radius: 50%;
+        }
+        
+    </style>
+
+    <title>CSS Function Phase 2</title>
+</head>
+<body>
+    <div id="header">
+        <p>CSS Function Phase 2</p>
+    </div>
+    <article>
+        <div class="article">
+            <h2>Responsive Wed design</h2>
+            <p>การออกแบบเว็บที่ตอบสนองและแสดงผลได้ดีบนอุปกรณ์ต่างๆหรือขนาดหน้าจอที่หลากหลาย เช่น จอคคอมพิวเตอร์ หรือ สมาร์ทโฟน เป็นต้น</p>
+            <a href="https://tailwindcss.com/docs/responsive-design" target="_blank">CSS tailwindcss</a><br>
+            <figure>
+                <img src="/image/css_responsive_wed_design.png" alt="Responsive lecture" id="picture">
+            </figure>
+            <p>คำสั่งตรวจสอบขนาดหน้าจอ จะใช้ Media Query</p>
+            <p>Media Query คือ รูปแบบการเขียน style ให้แสดงผลตามขนาดหน้าจอที่แตกต่างกัน</p>
+            <img src="/image/css_responsive_wed_design_Media_query.png" alt="" id="picture">
+            <img src="/image/css_responsive_wed_design_Media_query_screenSize.png" alt="" id="picture">
+        </div>
+        <div class="article">
+            <h2>Flexbox</h2>
+            <p>คือเครืองมือใน CSS ที่ช่วยให้การจัดการ element ต่างๆ ในหน้าเว็บมีความง่ายและยืดหยุ่นมากยิ่งขึ้น</p>
+            <figure>
+                <img src="/image/css_flexbox.png" alt="Flexbox-1 lecture" id="picture">
+            </figure>
+            <p>องค์ประกอบโดยใช้ Container และกล่อง 3 กล่อง</p>
+            <figure>
+                <img src="/image/css_flexbox-2.png" alt="Flexbox-2 lecture" id="picture">
+            </figure>
+            <p>การจัดเรียงในแบบอื่นๆ</p>
+            <figure>
+                <img src="/image/css_flexbox-3.png" alt="Flexbox-3 lecture" id="picture">
+            </figure>
+            <p>การกำหนด Flexbox</p>
+            <figure>
+                <img src="/image/css_flexbox-4.png" alt="Flexbox-4 lecture" id="picture">
+            </figure>
+            <p>กำหนดทิศทางด้วย Flex-direction</p>
+            <figure>
+                <img src="/image/css_flexbox-5.png" alt="Flexbox-5 lecture" id="picture">
+            </figure>
+            <p>การกำหนดขนาดด้วย Flex-wrap คือการห่อหุ่ม element</p>
+            <figure>
+                <img src="/image/css_flexbox-6.png" alt="Flexbox-6 lecture" id="picture">
+            </figure>
+        </div>
+        <div class="article">
+            <h2>Flex Item</h2>
+            <p>การกำหนด Propertise ให้กับ Item ใน Flexbox</p>
+            <p>Flex-basic กำหนดค่าความยืดหยุ่นเริ่มต้น</p>
+            <p>Flex-shrink หดเป็นกี่เท่าถ้าเทียบกับ item อื่น</p>
+            <p>Flex-grow ขยายเป็นกี่เท่าถ้าเทียบกับ Item อื่น</p>
+            <figure>
+                <img src="/image/css_flexitem-1.png" alt="Flex item lecture" id="picture">
+            </figure>
+        </div>
+
+        <div class="article">
+            <h2>Flex Justify</h2>
+            <p>การจัดวางตำแหน่งของ Item เทียบกับแกนหลัก ของ Container</p>
+            <figure>
+                <img src="/image/css_flex_justify.png" alt="Flex justify lecture" id="picture">
+            </figure>
+        </div>
+        <div class="article">
+            <h2>Flex Alignment (Item)</h2>
+            <p>การจัดวาง Item เทียบกับแกนตรงข้าม</p>
+            <figure>
+                <img src="/image/css_flex_alignment_item.png" alt="Flex aliment lecture" id="picture">
+            <figure>
+        </div>
+        <div class="article">
+            <h2>Grid layout</h2>
+            <P>การจัด Layout แบบ 2 มิติ เช่น ตาราง แตกต่างจาก Flexbox ที่เป็นแบบ 1 มิติ เช่นเรียงจากบนลงล่าง ซ้ายไปขวา</P> 
+            <figure>
+                <img src="/image/css_grid.png" alt="" id="picture">
+                <img src="/image/css_grid-2.png" alt="" id="picture">
+            </figure>
+            <p>Grid propoties</p>
+            <ol>
+                <li>Span layout</li>
+                <li>FR unit</li>
+                <p>ใช้เป็นหน่วบแบบ relative หลีกเลี่ยงการใช้แบบ px </p>
+                <li>gap</li>
+                <li>grid-template-area</li>
+            </ol>
+            <figure>
+                <img src="/image/css_grid-3_span.png" alt="" id="picture">
+            </figure>
+        </div>
+        <div class="article">
+            <h2>Advance Selectors</h2>
+            <figure>
+                <img src="/image/css_advance_selectors.png" alt="" id="picture">
+            </figure>
+            <ul>
+                <li>Targeted Selector</li>
+                    <ul>
+                        <li>Descendant Selector</li>
+                        <li>Child Selector</li>
+                    </ul>
+            <figure>
+                <img src="/image/css_advance_selectors-targeted.png" alt="" id="picture">
+            </figure>    
+                <li>Style By Attribute</li>
+                <li>Special Attibute</li>
+                <li>Pseudo Selectors</li>
+                    <ul>
+                        <li>First-child</li>
+                        <li>Last-child</li>
+                        <li>ntn-child</li>
+                    </ul>
+                <li>Before & After Pseudo</li>
+            </ul>
+        </div>
+
+        <div class="article">
+            <h2>Text Shadow</h2>
+            <figure>
+                <img src="/image/css_text-shadow.png" alt="" id="picture">
+            </figure>
+        </div>
+
+        <div class="article">
+            <h2>CSS variable</h2>
+            <p>การกำหนดตัวแปรเอง (custom variable) โดยขึ้นต้นด้วยเครื่องหมาย - แลัวตามด้วยชื่อตัวแปร</p>
+            <p>โดยใช้ :root {ตัวแปรทั้ต้องการกำหนด} และจะเลือกใช้โดย propoties : var(ตัวแปร)</p>
+            <code>
+                <pre>
+                    :root{
+                        --spacing: 1%;
+                    }
+                    .header-1{
+                        magin:var(--spacing);
+                        padding: var(--spacing);
+                    }
+                </pre>
+            </code>
+            <figure>
+                <img src="/image/css_variable.png" alt="" id="picture">
+            </figure>    
+        </div>
+
+        <div class="article">
+            <h2>Manage Element by Transform</h2>
+            <p>การหมุน การกำหนดตำแหน่ง การขยาย</p>
+            <figure>
+                <img src="/image/css_tranform.png" alt="Tranform lecture" id="picture">
+            </figure>
+        </div>
+
+        <div class="article">
+            <h2>CSS transition</h2>
+            <p>การเปลี่ยนค่าใน element จากค่าหนึ่งไปสู่อีกค่าหนึ่งในช่วงเวลาที่กำหนด</p>
+            <figure>
+                <img src="/image/css_trasition.png" alt="Transition lecture" id="picture">
+                <img src="/image/css_transition-2.png" alt="Transition-2 lecture" id="picture">
+            </figure>
+            <div class="container-2">
+                <div class="box-demo-1"></div>
+            </div>
+        </div>
+    </article>
+</body>
+</html>

@@ -1,0 +1,113 @@
+*{
+    font-family : "lucida handwriting" , "Itim" , cursive ;
+    box-sizing: border-box;
+}
+body{  
+    display: flex;
+    flex-direction: column;
+}
+
+div#targeted-selectors{
+    background-color: aqua;
+}
+div#specialAttibute{
+    background-color: aquamarine;
+}
+div#styleByAttibyte{
+    background-color: salmon;
+}
+div#pseudoSelector{
+    background-color: skyblue;
+}
+div#beforeAfterPseudo{
+    background-color: brown;
+    color: white;
+}
+
+
+/* Descendant Selector */
+div#targeted-selectors p{
+    background-color: green;
+}
+/* Child Selector */
+div#targeted-selectors>p{
+    background-color: gold;
+}
+a{
+    background-color: orange;
+}
+/* a[target]{
+    background-color: black;
+    color: white;
+} */
+a[target="_blank"]{
+    background-color: red;
+    color: white;
+}
+a[target="_self"]{
+    background-color: rebeccapurple;
+    color: white;
+}
+input[type="email"],input[type="text"]{
+    width: 30%;
+    margin-bottom: 1%;
+}
+input[type="submit"]{
+    color:white;
+    background-color: black;
+    border-radius: 10%;
+}
+div#pseudoSelector ul li{
+    padding: 0.25rem;
+    margin: 0.25rem;
+    list-style:circle;
+}
+
+div#pseudoSelector li:first-child{
+    background-color: blue;
+}
+div#pseudoSelector li:last-child{
+    background-color: slateblue;
+}
+div#pseudoSelector li:nth-child(3){
+    background-color: crimson;
+}
+div#pseudoSelector li:nth-last-child(3){
+    background-color: chartreuse;
+}
+div#pseudoSelector li:nth-child(even)/*2n-->even*/{
+    background-color: violet;
+}
+
+.is-required:before{
+    content:"*";
+    color: red;
+    padding-left: 2px;
+}
+
+.overlay{
+    background: url('/image/moon-1527501_1920.jpg') no-repeat center center/cover;
+    
+    color: #fff;
+    /* opacity: 0.5; */
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+.title>h1{
+    font-size: 5rem;
+    margin: 1rem;
+}
+.title>p{
+    font-size: 2rem;
+}
+.title{
+    background: #333;
+    z-index: -1;
+    opacity: 0.8;
+}

@@ -1,0 +1,27 @@
+:root{
+    --box: 0.5rem solid black;
+    --theme-color: rgb(249, 127, 255);
+    --spacing:1%;
+}
+
+.box-1{
+    padding: var(--spacing);
+    border: var(--box);
+    background-color: var(--theme-color);
+    margin: var(--spacing);
+}
+.box-2{
+    padding: var(--spacing);
+    border: var(--box);
+    background-color: var(--theme-color);
+    margin: var(--spacing);
+}
+.box-3{
+    padding: var(--spacing);
+    border: var(--box);
+    background-color: var(--theme-color);
+    margin: var(--spacing);
+}
+body{
+    background-color: aquamarine;
+}
