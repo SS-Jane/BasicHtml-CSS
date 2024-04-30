@@ -32,9 +32,6 @@ body{
     /* background-attachment: fixed; */
     background-size: contain;
     /* background: url("/image/moon-8226250_1920.jpg") no-repeat fixed ; */
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
     
 }
 h1{
